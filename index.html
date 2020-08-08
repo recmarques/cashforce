@@ -26,13 +26,13 @@
           .header {
             overflow: hidden;
             background-color: #0B27FA;
-            /* padding: 20px 10px; */
             width: 100%;
             height: 450px;
             left: 0px;
             top: 0px;
           }
-   
+        
+        
           .header a {
             float: left;
             color: black;
@@ -58,7 +58,6 @@
             text-align: left;
             font-family: 'DM Sans', sans-serif;;
             font-style: normal;
-            /* font-weight: 500; */
             font-weight: bold;
             font-size: 24px;
             line-height: 40px;
@@ -88,10 +87,9 @@
           }
 
           .text {
-            /* padding-left: 159px; */
             padding-left: 172px;
             padding-right: 60px;
-            padding-bottom: 225px;
+            padding-bottom: 50px;
             padding-top: 68px;
 
             font-size: 18px;
@@ -112,10 +110,8 @@
           }
 
           .form {
-            /* padding-right: 159px; */
-            /* padding-left: 111.5px; */
             padding-left: 120px;
-            padding-bottom: 225px;
+            padding-bottom: 50px;
             padding-top: 68px;
             max-width: 550px;
 
@@ -152,6 +148,7 @@
             background: #00BA91;
             color: #021B51;
             border: none;
+            transition: 0.6s;
             border-radius: 6px;
             float: right;
             font-family: 'DM Sans', sans-serif;
@@ -203,8 +200,34 @@
           width: 100%;
         }
 
+        ::-webkit-input-placeholder { 
+           color: #DADADA;
+           font-size: 14px;
+        }
+         
+        :-ms-input-placeholder {
+           color: #DADADA;
+           font-size: 14px;
+        }
+
+        :-moz-placeholder {
+           color: #DADADA;
+           font-size: 14px;
+        }
+
+        ::placeholder {  
+           color: #DADADA;
+           font-size: 14px;
+        } 
+            
+        :-ms-input-placeholder { 
+           color: #DADADA;
+           font-size: 14px;
+        } 
+
         .form-border{
            border: 1px solid #021B51;
+           color: #DADADA;
         }
 
         .label-title{
@@ -217,6 +240,13 @@
 
         .show-mobile {
           display: none;
+        }
+
+        .styled-select {
+          background: url(img/select.png) no-repeat right;
+          display: inline-block;
+          color: #6c757d;
+          font-size: 14px;
         }
         
         @media screen and (max-width: 600px) {
@@ -257,7 +287,7 @@
             font-family: 'DM Sans', sans-serif;
             font-style: normal;
             font-weight: 900;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 18px;
 
             color: #021B51;
@@ -270,7 +300,6 @@
             text-align: left;
             font-family: 'DM Sans', sans-serif;
             font-style: normal;
-            /* font-weight: 500; */
             font-weight: bold;
             font-size: 24px;
             line-height: 40px;
@@ -282,7 +311,7 @@
           }
 
           .header .description {
-            padding-left: 29px
+            padding-left: 29px;
             padding-top: 10px;
             text-align: left;
             font-style: normal;
@@ -294,7 +323,6 @@
             line-height: 50px;
 
             color: #ffffff;
-
           }
 
           .footer {
@@ -319,8 +347,8 @@
 
           .form {
             padding-left: 44px;
-            padding-right: 10%;
-            padding-bottom: 225px;
+            padding-right: 5%;
+            padding-bottom: 50px;
             padding-top: 0px;
             max-width: 550px;
 
@@ -337,6 +365,7 @@
             color: #021B51;
             border: none;
             border-radius: 6px;
+            transition: 0.6s;
             float: right;
             font-family: 'DM Sans', sans-serif;
             font-weight: 900;
@@ -367,6 +396,10 @@
             display: block;
             text-align: left;
           }
+
+          .label-title{
+          font-size: 14px;
+        }
           
           .header-right {
             float: none;
@@ -402,7 +435,7 @@
 
           .form {
             padding-left: 150px;
-            padding-bottom: 225px;
+            padding-bottom: 100px;
             padding-top: 68px;
             max-width: 700px;
 
@@ -420,7 +453,7 @@
           .text {
             padding-left: 270px;
             padding-right: 50px;
-            padding-bottom: 50px;
+            padding-bottom: 100px;
             padding-top: 68px;
 
             font-size: 20px;
@@ -478,7 +511,7 @@
         <body>
 
           <div class="header">
-            <a class="logo">
+            <a class="logo" href="">
               <img src="img/logo.png" href="#default" alt="logo-header"/>
             </a>
 
@@ -503,11 +536,11 @@
               <div class="footer">
                 <img src="img/© CashForce 2020.png" alt="cashforce2020"/>
                 
-                <a href="https://www.linkedin.com/feed/">
+                <a href="https://www.linkedin.com/feed/" target="_blank">
                 <img src="img/linkedin.svg" class="linkedin" alt="linkedin"/>
                 </a>
               
-                <a href="">
+                <a href="" target="_blank">
                 <button type="submit" class="button-footer btn" href="">Quero conhecer</button>
                 </a>
 
@@ -520,9 +553,9 @@
 
               <p class="form-title">Baixe esse conteúdo gratuitamente</p>
                 <div class="form-group">
-                  <label for="name" class="label-title">Seu nome</label>
-                  <input type="text" name="name" class="form-control form-border" id="name"
-                  placeholder="Seu nome" aria-describedby="name" required>
+                  <label for="fname" class="label-title">Seu nome</label>
+                  <input type="text" id="fname" name="fname" class="form-control form-border" id="fname"
+                  placeholder="Seu nome" aria-describedby="fname" required>
                 </div>
                 <div class="form-group">
                   <label for="email" class="label-title">E-mail de trabalho</label>
@@ -545,8 +578,8 @@
                   placeholder="Seu cargo" required>
                 </div>
                 <div class="form-group">
-                  <label for="employees" class="label-title">Funcionários</label>
-                    <select class="custom-select form-border" id="employees" aria-label="employees">
+                  <label for="employess" class="label-title">Funcionários</label>
+                    <select class="custom-select form-border styled-select" id="employess" aria-label="employess">
                         <option selected>Selecione</option>
                         <option value="1">0-50</option>
                         <option value="2">51-100</option>
@@ -555,7 +588,7 @@
                   </div>
                   <div class="form-group">
                     <label for="segment" class="label-title">Em qual segmento sua empresa se encaixa?</label>
-                    <select class="custom-select form-border" id="segment" aria-label="segment">
+                    <select class="custom-select form-border styled-select" id="segment" aria-label="segment">
                         <option selected>Selecione</option>
                         <option value="1">Alimentação e Bebidas</option>
                         <option value="2">Construção</option>	
@@ -579,23 +612,21 @@
               </form>
 
                 <div class="footer-right">
-                  <img src="img/linkedin.svg" class="linkedin-right" alt="linkedin"/>
+                  <a href="https://www.linkedin.com/feed/" target="_blank">
+                    <img src="img/linkedin.svg" class="linkedin-right" alt="linkedin"/>
+                  </a>
                 </div>
 
                 <div class="footer-right-img">
-                  <img src="img/© CashForce 2020.png" width="40%" height="40%" alt="cashforce2020"/>
+                  <img src="img/© CashForce 2020.png" width="30%" height="30%" alt="cashforce2020"/>
                 </div>
 
             </div>
 
-  
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" crossorigin="anonymous"></script>
-   
 
         <script>
 
