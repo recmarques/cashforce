@@ -1,99 +1,93 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
 
     <link rel="icon" href="img/favicon.png" type="image/png" />
 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Renata Castro">
-    <meta name="description" content="Landing Page E-book Cashforce">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Renata de Castro M.">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-
-    <!-- FONT FAMILY -->
+    <!-- Font Family -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <style>
         * {box-sizing: border-box;}
         
-        body { 
-          margin: 0;
-          font-family: Arial, Helvetica, sans-serif;
-          width: 100%;
-        }
+          body { 
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+          }
         
-        .header {
-          overflow: hidden;
-          background-color: #0B27FA;
-          /* padding: 20px 10px; */
-          width: 100%;
-          height: 450px;
-          left: 0px;
-          top: 0px;
-        }
+          .header {
+            overflow: hidden;
+            background-color: #0B27FA;
+            /* padding: 20px 10px; */
+            width: 100%;
+            height: 450px;
+            left: 0px;
+            top: 0px;
+          }
+   
+          .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px; 
+            line-height: 25px;
+            border-radius: 4px;
+          }
         
-        
-        .header a {
-          float: left;
-          color: black;
-          text-align: center;
-          padding: 12px;
-          text-decoration: none;
-          font-size: 18px; 
-          line-height: 25px;
-          border-radius: 4px;
-        }
-        
-        .header a.logo {
-          padding-left: 159px;
-          padding-top: 78px;
-          font-size: 25px;
-          font-weight: bold;
-        }
-
-       
+          .header a.logo {
+            padding-left: 159px;
+            padding-top: 78px;
+            font-size: 25px;
+            font-weight: bold;
+          }
       
-        .header .ebook {
-          padding-left: 159px;
-          padding-top: 162px;
-          font-size: 25px;
-          text-align: left;
-          font-family: 'DM Sans', sans-serif;;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 24px;
-          line-height: 40px;
+          .header .ebook {
+            padding-left: 159px;
+            padding-top: 162px;
+            font-size: 25px;
+            text-align: left;
+            font-family: 'DM Sans', sans-serif;;
+            font-style: normal;
+            /* font-weight: 500; */
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 40px;
 
-          letter-spacing: 0.15em;
-          text-transform: uppercase;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
 
-          color: #00BA91;
+            color: #00BA91;
 
-        }
+          }
 
-        .header .description {
-          padding-left: 159px;
-          padding-top: 10px;
-          font-size: 25px;
-          text-align: left;
-          font-style: normal;
-          font-family: 'DM Sans', sans-serif;
+          .header .description {
+            padding-left: 159px;
+            padding-top: 10px;
+            font-size: 25px;
+            text-align: left;
+            font-style: normal;
+            font-family: 'DM Sans', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 40px;
             line-height: 52px;
             line-height: 50px;
 
-          color: #ffffff;
+            color: #ffffff;
 
-        }
+          }
 
-        .text {
+          .text {
             /* padding-left: 159px; */
             padding-left: 172px;
             padding-right: 60px;
@@ -105,9 +99,9 @@
             font-family: 'DM Sans', sans-serif;
 
             color: #444548;
-        }
+          }
 
-        .text-bold{
+          .text-bold{
 
             font-size: 18px;
             line-height: 32px;
@@ -115,11 +109,12 @@
             color: #0B27FA;
             font-weight: 700;
 
-        }
+          }
 
-        .form {
+          .form {
             /* padding-right: 159px; */
-            padding-left: 111.5px;
+            /* padding-left: 111.5px; */
+            padding-left: 120px;
             padding-bottom: 225px;
             padding-top: 68px;
             max-width: 550px;
@@ -129,10 +124,10 @@
             font-family: 'DM Sans', sans-serif;
 
             color: #444548;
-        }
+          }
 
         .footer {
-            padding-top: 100px;
+            padding-top: 80px;
         }
 
         .footer-right {
@@ -145,6 +140,11 @@
 
         .linkedin {
             padding-left: 75px;
+        }
+
+        .sucess-form{
+          color: #00BA91;
+          font-weight: 700;
         }
 
         .button-footer {
@@ -196,7 +196,7 @@
         }
 
         .space{
-          display: none;
+         height: 20px;
         }
 
         .row{
@@ -206,114 +206,120 @@
         .form-border{
            border: 1px solid #021B51;
         }
+
+        .label-title{
+          font-family: 'DM Sans', sans-serif;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 14px;
+          line-height: 18px;
+        }
+
+        .show-mobile {
+          display: none;
+        }
         
         @media screen and (max-width: 600px) {
 
-
           .space{
-          display: flex;
-          height: 80px;
-        }
+            height: 65px;
+          }
 
-        .text {
-            /* padding-left: 159px; */
-            padding-left: 50px;
-            padding-right: 50px;
+          .text {
+            padding-left: 44px;
+            padding-right: 11px;
             padding-bottom: 50px;
-            padding-top: 68px;
+            padding-top: 23px;
+            font-size: 16px;
 
-            font-size: 18px;
             line-height: 32px;
             font-family: 'DM Sans', sans-serif;
 
             color: #444548;
-        }
-          
+          }
+
           .header {
-          overflow: hidden;
-          background-color: #0B27FA;
-          width: 100%;
-          height: 600px;
-          left: 0px;
-          top: 0px;
+            overflow: hidden;
+            background-color: #0B27FA;
+            width: 100%;
+            height: 600px;
+            left: 0px;
+            top: 0px;
           }
 
           .header a.logo {
-          padding-left: 30%;
-          padding-top: 38px;
-          font-weight: bold;
+            padding-left: 26%;
+            padding-top: 38px;
+            font-weight: bold;
           }
 
-          .label-title{
+          .label-title {
             font-family: 'DM Sans', sans-serif;
             font-style: normal;
-          font-weight: 900;
-          font-size: 16px;
-          line-height: 18px;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 18px;
 
-          color: #021B51;
+            color: #021B51;
           }
 
-        .header .ebook {
-          padding-left: 29px;
-          padding-top: 150px;
-          font-size: 25px;
-          text-align: left;
-          font-family: 'DM Sans', sans-serif;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 24px;
-          line-height: 40px;
+          .header .ebook {
+            padding-left: 29px;
+            padding-top: 110px;
+            font-size: 25px;
+            text-align: left;
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
+            /* font-weight: 500; */
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 40px;
 
-          letter-spacing: 0.15em;
-          text-transform: uppercase;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
 
-          color: #00BA91;
+            color: #00BA91;
+          }
 
-        }
-
-        .header .description {
-          padding-left: 29px;
-          padding-top: 10px;
-          font-size: 25px;
-          text-align: left;
-          font-style: normal;
-          font-family: 'DM Sans', sans-serif;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 50px;
+          .header .description {
+            padding-left: 29px
+            padding-top: 10px;
+            text-align: left;
+            font-style: normal;
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
             
-          line-height: 52px;
-          line-height: 50px;
+            line-height: 50px;
 
-          color: #ffffff;
+            color: #ffffff;
 
-        }
+          }
 
-        .footer {
+          .footer {
             display: none;
-        }
+          }
 
-        .footer-right {
+          .footer-right {
             display:flex;
             padding-top: 50px;
             padding-left: 0;
             align-items: flex-start;
-        }
+          }
 
-        .footer-right-img {
+          .footer-right-img {
             display:flex;
             padding-top: 30px;
-        }
+          }
 
-        .linkedin-right {
+          .linkedin-right {
             padding-left: 0px;
-        }
+          }
 
-        .form {
-
-            padding-left: 50px;
-            padding-right: 40px;
+          .form {
+            padding-left: 44px;
+            padding-right: 10%;
             padding-bottom: 225px;
             padding-top: 0px;
             max-width: 550px;
@@ -323,10 +329,10 @@
             font-family: 'DM Sans', sans-serif;
 
             color: #444548;
-        }
+          }
         
-        .button-form{
-          padding: 11px 80px;
+          .button-form{
+            padding: 11px 80px;
             background:#00D999;
             color: #021B51;
             border: none;
@@ -337,20 +343,25 @@
             font-size: 14px;
             line-height: 18px;
             text-align: center;
-        }
+          }
 
-        .form-title{
+          .form-title{
             font-family: 'DM Sans', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 28px;
             line-height: 40px;
             color: #021B51;
+          }
+
+          .show-desktop {
+            display: none;
+          }
+
         }
 
-}
-
         @media screen and (max-width: 500px) {
+
           .header a {
             float: none;
             display: block;
@@ -360,125 +371,247 @@
           .header-right {
             float: none;
           }
+
+          .show-mobile {
+            display: flex;
+          }
         }
+
+        @media screen and (max-width: 320px) {
+          .header .description {
+            font-size: 30px;
+            line-height: 50px;
+            }
+
+          .show-mobile {
+            display: none;
+          }
+
+          .text {
+            padding-bottom: 50px;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 10px;
+
+            font-size: 16px;
+            line-height: 32px;
+          }
+        }
+
+        @media screen and (min-width: 1500px){
+
+          .form {
+            padding-left: 150px;
+            padding-bottom: 225px;
+            padding-top: 68px;
+            max-width: 700px;
+
+            font-size: 18px;
+            line-height: 32px;
+            font-family: 'DM Sans', sans-serif;
+
+            color: #444548;
+          }
+
+          .footer {
+            padding-top: 110px;
+          }
+
+          .text {
+            padding-left: 270px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-top: 68px;
+
+            font-size: 20px;
+            line-height: 32px;
+            font-family: 'DM Sans', sans-serif;
+
+            color: #444548;
+          }
+
+          .header a.logo {
+            padding-left: 250px;
+            padding-top: 38px;
+            font-weight: bold;
+          }    
+
+          .header .ebook {
+            padding-left: 250px;
+            padding-top: 150px;
+            font-size: 25px;
+            text-align: left;
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 40px;
+
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+
+            color: #00BA91;
+          }
+
+          .header .description {
+            padding-left: 250px;
+            padding-top: 10px;
+            text-align: left;
+            font-style: normal;
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            
+            line-height: 52px;
+            line-height: 50px;
+
+            color: #ffffff;
+            }
+          }
+
         </style>
     
     <title>Cashforce | E-book</title>
-  </head>
-  <body>
 
-      <div class="header">
-          <a class="logo">
-              <img src="img/logo.png" href="#default"/>
-          </a>
+      </head>
+        <body>
 
-          <div class="ebook">
+          <div class="header">
+            <a class="logo">
+              <img src="img/logo.png" href="#default" alt="logo-header"/>
+            </a>
+
+            <div class="ebook">
               EBOOK:
+            </div>
+            <div class="description">
+              Fortaleça seu negócio em <br class="show-desktop"/>época de coronavírus com<br class="show-desktop"/> o nosso<br class="show-mobile"/> e-book
+            </div>
           </div>
-
-          <div class="description">
-              Fortaleça seu negócio em <br />época de coronavírus com<br />o nosso e-book
-           </div>
-        </div>
       
-     <div class="row">
-      <div class="col-sm-5 col-md-6 text">
-         Com o novo cenário em que temos vivido, empresas que utilizam a tecnologia para atender seus consumidores tornam-se mais fortes e estratégicas.
-         Com o planejamento, controle e o suporte das Supply Chain Finances, há mais organização, eficiência, segurança e transparência nas atividades e
-         no relacionamento entre Fornecedores, Compradores e Financiadores.
-         
-        <p><br />A Cashforce traz o e-book: <b class="text-bold">Tecnologia como solução para empresas no cenário atual</b>, um material exclusivo para você saber como
-         a tecnologia e os processos de gestão alinhados são essenciais para a cadeia de suprimentos
-         superar a crise causada pelo novo coronavírus. </p>
+          <div class="row">
+            <div class="col-sm-5 col-md-6 text">
 
-         <p><br /><b class="text-bold">Baixe o e-book</b> agora mesmo e prepare sua empresa para este novo cenário.</p>
-            <div class="footer">
-              <img src="img/© CashForce 2020.png"/>
-              <img src="img/linkedin.svg" href="" class="linkedin"/>
-              <button type="submit" class="button-footer btn" href="">Quero conhecer</button>
-            </div>
-        </div>
-       
-        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 form">
-          <form>
-            <p class="form-title">Baixe esse conteúdo gratuitamente</p>
-            <div class="form-group">
-              <label for="exampleInputEmail1" class="label-title">Seu nome</label>
-              <input type="email" id="fname" name="fname" class="form-control form-border" id="exampleInputEmail1"
-              placeholder="Seu nome" aria-describedby="emailHelp" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="exampleInputPassword1" class="label-title">E-mail de trabalho</label>
-              <input type="password" class="form-control form-border" id="exampleInputPassword1"
-              placeholder="seuemail@dominio.com" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="exampleInputPassword1" class="label-title">Número de telefone</label>
-                <input type="password" class="form-control form-border" id="exampleInputPassword1"
-                placeholder="(11) 99999-9999" required>
-              </div>
-            
-              <div class="form-group">
-                <label for="exampleInputPassword1" class="label-title">Nome da empresa</label>
-                <input type="password" class="form-control form-border" id="exampleInputPassword1"
-                placeholder="Nome da Empresa" required>
-              </div>
-            
-              <div class="form-group">
-                <label for="exampleInputPassword1" class="label-title">Cargo</label>
-                <input type="password" class="form-control form-border" id="exampleInputPassword1"
-                placeholder="Seu cargo" required>
-              </div>
-            
-              <div class="form-group">
-                <label for="exampleInputPassword1" class="label-title">Funcionários</label>
-                <select class="custom-select form-border" id="inputGroupSelect04" aria-label="Example select with button addon">
-                    <option selected>Selecione</option>
-                    <option value="1">0-50</option>
-                    <option value="2">51-100</option>
-                    <option value="3">+100</option>
-                  </select>
-              </div>
-            
-              <div class="form-group">
-                <label for="exampleInputPassword1" class="label-title">Em qual segmento sua empresa se encaixa?</label>
-                <select class="custom-select form-border" id="inputGroupSelect04" aria-label="Example select with button addon">
-                    <option selected>Selecione</option>
-                    <option value="1">Alimentação e Bebidas</option>
-                    <option value="2">Construção</option>	
-                    <option value="3">Conteúdo Publicitário</option>
-                    <option value="4">Educação</option>
-                    <option value="5">Entretenimento</option>
-                    <option value="6">Informática</option>
-                    <option value="7">Saúde</option>
-                    <option value="8">Serviços especializados</option>
-                    <option value="9">Serviços pessoais</option>
-                    <option value="10">Vendas e marketing</option>
-                    <option value="11">Vestuário e calçados</option>
-                  </select>
-              </div>
+              Com o novo cenário em que temos vivido, empresas que utilizam a tecnologia para atender seus consumidores tornam-se mais fortes e estratégicas. Com o planejamento, controle e o suporte das Supply Chain Finances, há mais organização, eficiência, segurança e transparência nas atividades e no relacionamento entre Fornecedores, Compradores e Financiadores.
+              <p><br />A Cashforce traz o e-book: <b class="text-bold">Tecnologia como solução para empresas no cenário atual</b>, um material exclusivo para você saber como
+              a tecnologia e os processos de gestão alinhados são essenciais para a cadeia de suprimentos
+              superar a crise causada pelo novo coronavírus. </p>
 
-            <div class="space">
-            </div>
-            
-            <button type="submit" class="btn btn-primary button-form">Enviar</button>
-          </form>
+              <p><br /><b class="text-bold">Baixe o e-book</b> agora mesmo e prepare sua empresa para este novo cenário.</p>
 
-            <div class="footer-right">
-              <img src="img/linkedin.svg" class="linkedin-right"/>
+              <div class="footer">
+                <img src="img/© CashForce 2020.png" alt="cashforce2020"/>
+                
+                <a href="https://www.linkedin.com/feed/">
+                <img src="img/linkedin.svg" class="linkedin" alt="linkedin"/>
+                </a>
+              
+                <a href="">
+                <button type="submit" class="button-footer btn" href="">Quero conhecer</button>
+                </a>
+
+              </div>
             </div>
 
-            <div class="footer-right-img">
-              <img src="img/© CashForce 2020.png" width="40%" height="40%"/>
-             </div>
-        </div>
+            <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 form">
+      
+              <form action="javascript:myFunction()">
 
+              <p class="form-title">Baixe esse conteúdo gratuitamente</p>
+                <div class="form-group">
+                  <label for="name" class="label-title">Seu nome</label>
+                  <input type="text" name="name" class="form-control form-border" id="name"
+                  placeholder="Seu nome" aria-describedby="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="label-title">E-mail de trabalho</label>
+                  <input type="email" class="form-control form-border" id="email"
+                  placeholder="seuemail@dominio.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="label-title">Número de telefone</label>
+                  <input type="text" class="form-control form-border" name="phone" id="phone-number"
+                  placeholder="(11) 99999-9999" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" required>
+                </div>
+                <div class="form-group">
+                  <label for="enterprise" class="label-title">Nome da empresa</label>
+                  <input type="text" class="form-control form-border" id="enterprise"
+                  placeholder="Nome da Empresa" required>
+                </div>
+                <div class="form-group">
+                  <label for="occupation" class="label-title">Cargo</label>
+                  <input type="text" class="form-control form-border" id="occupation"
+                  placeholder="Seu cargo" required>
+                </div>
+                <div class="form-group">
+                  <label for="employees" class="label-title">Funcionários</label>
+                    <select class="custom-select form-border" id="employees" aria-label="Example select with button addon">
+                        <option selected>Selecione</option>
+                        <option value="1">0-50</option>
+                        <option value="2">51-100</option>
+                        <option value="3">+100</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="segment" class="label-title">Em qual segmento sua empresa se encaixa?</label>
+                    <select class="custom-select form-border" id="segment" aria-label="segment">
+                        <option selected>Selecione</option>
+                        <option value="1">Alimentação e Bebidas</option>
+                        <option value="2">Construção</option>	
+                        <option value="3">Conteúdo Publicitário</option>
+                        <option value="4">Educação</option>
+                        <option value="5">Entretenimento</option>
+                        <option value="6">Informática</option>
+                        <option value="7">Saúde</option>
+                        <option value="8">Serviços especializados</option>
+                        <option value="9">Serviços pessoais</option>
+                        <option value="10">Vendas e marketing</option>
+                        <option value="11">Vestuário e calçados</option>
+                      </select>
+                  </div>
+
+                  <p id="demo" class="sucess-form"></p>
+
+                  <div class="space"></div>
+            
+                  <button type="submit" class="btn btn-primary button-form">Enviar</button>
+              </form>
+
+                <div class="footer-right">
+                  <img src="img/linkedin.svg" class="linkedin-right" alt="linkedin"/>
+                </div>
+
+                <div class="footer-right-img">
+                  <img src="img/© CashForce 2020.png" width="40%" height="40%" alt="cashforce2020"/>
+                </div>
+
+            </div>
+
+  
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" crossorigin="anonymous"></script>
    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-   
-</body>
-</html>
+
+        <script>
+
+          $(document).ready(function(){
+          $('#phone-number').mask('(00) 00000-0000');
+          });
+
+        
+          function myFunction() {
+            var result;
+            result = "E-book enviado com sucesso! Aproveite!"
+            
+            document.getElementById("demo").innerHTML = result;
+          }
+
+        </script>
+            
+        </body>
+      </html>
