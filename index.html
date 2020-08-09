@@ -122,28 +122,28 @@
             color: #444548;
           }
 
-        .footer {
+          .footer {
             padding-top: 80px;
-        }
+          }
 
-        .footer-right {
+          .footer-right {
             display: none;
-        }
+          }
 
-        .footer-right-img {
+          .footer-right-img {
             display: none;
-        }
+          }
 
-        .linkedin {
+          .linkedin {
             padding-left: 75px;
-        }
+          }
 
-        .sucess-form{
-          color: #00BA91;
-          font-weight: 700;
-        }
+          .sucess-form{
+            color: #00BA91;
+            font-weight: 700;
+          }
 
-        .button-footer {
+          .button-footer {
             padding: 11px 30px;
             background: #00BA91;
             color: #021B51;
@@ -157,27 +157,27 @@
             line-height: 18px;
             text-align: center;
 
-        }
+          }
 
-        .button-footer:hover{
+          .button-footer:hover{
             background-color: #0B27FA;
             color: #ffffff;
-        }
+          }
         
-        .form-title{
+          .form-title{
             font-family: 'DM Sans', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
             line-height: 40px;
             color: #021B51;
-        }
+          }
 
-        .header-right {
-          float: right;
-        }
+          .header-right {
+            float: right;
+          }
 
-        .btn-primary{
+          .btn-primary{
             padding: 11px 80px;
             background: #00BA91;
             color: #021B51;
@@ -190,65 +190,67 @@
             line-height: 18px;
             text-align: center;
 
-        }
+          }
 
-        .space{
-         height: 20px;
-        }
+          .space{
+            height: 20px;
+          }
 
-        .row{
-          width: 100%;
-        }
+          .row{
+            width: 100%;
+          }
 
-        ::-webkit-input-placeholder { 
+          ::-webkit-input-placeholder { 
            color: #DADADA;
            font-size: 14px;
-        }
+          }
          
-        :-ms-input-placeholder {
+          :-ms-input-placeholder {
            color: #DADADA;
            font-size: 14px;
-        }
+          }
 
-        :-moz-placeholder {
-           color: #DADADA;
-           font-size: 14px;
-        }
+          :-moz-placeholder {
+            color: #DADADA;
+            font-size: 14px;
+          }
 
-        ::placeholder {  
-           color: #DADADA;
-           font-size: 14px;
-        } 
+          ::placeholder {  
+            color: #DADADA;
+            font-size: 14px;
+          } 
             
-        :-ms-input-placeholder { 
-           color: #DADADA;
-           font-size: 14px;
-        } 
+          :-ms-input-placeholder { 
+            color: #DADADA;
+            font-size: 14px;
+          } 
 
-        .form-border{
-           border: 1px solid #021B51;
-           color: #DADADA;
-        }
+          .form-border{
+            border: 1px solid #021B51;
+            color: #DADADA;
+          }
 
-        .label-title{
-          font-family: 'DM Sans', sans-serif;
-          font-style: normal;
-          font-weight: 900;
-          font-size: 14px;
-          line-height: 18px;
-        }
+          .label-title{
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 18px;
+          }
 
-        .show-mobile {
-          display: none;
-        }
+          .show-mobile {
+            display: none;
+          }
 
-        .styled-select {
-          background: url(img/select.png) no-repeat right;
-          display: inline-block;
-          color: #6c757d;
-          font-size: 14px;
-        }
+          .styled-select {
+            background: url(img/select.png) no-repeat right;
+            display: inline-block;
+            color: #6c757d;
+            font-size: 14px;
+          }
+
         
+        /* Mobile */
         @media screen and (max-width: 600px) {
 
           .space{
@@ -323,6 +325,7 @@
             line-height: 50px;
 
             color: #ffffff;
+
           }
 
           .footer {
@@ -431,9 +434,10 @@
           }
         }
 
+        /* PC */
         @media screen and (min-width: 1500px){
 
-          .form {
+          .form 
             padding-left: 150px;
             padding-bottom: 100px;
             padding-top: 68px;
@@ -476,6 +480,7 @@
             text-align: left;
             font-family: 'DM Sans', sans-serif;
             font-style: normal;
+            /* font-weight: 500; */
             font-weight: bold;
             font-size: 24px;
             line-height: 40px;
@@ -503,6 +508,62 @@
             }
           }
 
+          /* Tablet */
+          @media screen and (min-width: 700px) and (max-width: 1024px){
+          
+          .text {
+            padding-left: 46px;
+            padding-right: 27px;
+            padding-bottom: 50px;
+            padding-top: 33px;
+
+            font-size: 16px;
+
+          }
+
+          .header .description {
+            padding-left: 34px;
+            padding-top: 33px;
+            font-size: 25px;
+            text-align: left;
+            font-size: 40px;
+            line-height: 52px;
+
+          }
+
+          .header .ebook {
+            padding-left: 34px;
+            padding-top: 162px;
+
+            font-size: 24px;
+            line-height: 40px;
+
+          }
+
+          .header a.logo {
+            padding-left: 34px;
+            padding-top: 78px;
+            font-size: 25px;
+            font-weight: bold;
+          }
+
+          .form {
+            padding-left: 40px;
+            padding-bottom: 50px;
+            padding-top: 33px;
+            max-width: 550px;
+          }
+
+          .linkedin {
+            padding-left: 6px;
+          }
+
+        .button-footer {
+            padding: 11px 9px;
+
+          }
+        }
+      
         </style>
     
     <title>Cashforce | E-book</title>
@@ -618,7 +679,7 @@
                 </div>
 
                 <div class="footer-right-img">
-                  <img src="img/© CashForce 2020.png" width="30%" height="30%" alt="cashforce2020"/>
+                  <img src="img/© CashForce 2020.png" width="35%" height="35%" alt="cashforce2020"/>
                 </div>
 
             </div>
